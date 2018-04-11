@@ -1,5 +1,5 @@
 class AddColumnToCats < ActiveRecord::Migration[4.2]
-  def change
+  def change #foreign key points to a primary key in another table
     add_column :cats, :owner_id, :integer
   end
 end
